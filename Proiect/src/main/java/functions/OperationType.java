@@ -1,0 +1,5 @@
+package functions;
+
+public enum OperationType {
+    NONE, ADDITION, SUBTRACTION, MULTIPLICATION, DIVISION, DERIVATION, INTEGRATION;
+}
