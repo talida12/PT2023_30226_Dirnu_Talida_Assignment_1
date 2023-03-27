@@ -25,6 +25,6 @@ public class Monomial implements Function {
     }
 
     public String toString() {
-        return String.format("%.2g", coefficient) + "*x^" + power;    }
+        return String.format("%.2f", coefficient) + "*x^" + power;    }
 
 }

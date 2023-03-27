@@ -25,7 +25,7 @@ public class App {
         System.out.println(Operations.derivative(polDiv1));
         System.out.println(Operations.integral(pol));
         System.out.println();
-        Map<Integer,Double> map =  Operations. getPairs("+x^3-3*x^2+6*x^1-4");
+        Map<Integer,Double> map =  Operations. getPairs("+43*x^3+145");
         System.out.println(map);
     }
 }

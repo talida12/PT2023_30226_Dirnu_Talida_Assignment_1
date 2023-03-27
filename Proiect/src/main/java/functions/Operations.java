@@ -14,7 +14,7 @@ public class Operations {
             System.out.println(matcher.group(1));
             if ( !matcher.group(1).contains("x"))
             {
-                    map.put(  0, (double)Integer.parseInt( matcher.group(1).substring(0, matcher.group(1).length() ))  );
+                    map.put( 0, (double)Integer.parseInt( matcher.group(1).substring(0, matcher.group(1).length() )) );
             }
             else
             {
@@ -91,12 +91,10 @@ public class Operations {
             int newPower = f1.getDegree() - f2.getDegree();
             double v1 = f1.getCoefficients().get(f1.getDegree());
             double v2 = f2.getCoefficients().get(f2.getDegree());
-            //System.out.println(f1.getDegree() + " " + f2.getDegree() + " " + v1 + " " + v2);
             double newCoefficient = v1 / v2;
             System.out.println(newCoefficient);
             quotinent.put( newPower, newCoefficient );
             f1 = Operations.subtraction( f1, Operations.multiplication(new Monomial(newCoefficient, newPower), f2));//updatam deimpartitul
-           //System.out.println(f1.getDegree());
         }
         return new DivisionResult(new Polynomial(quotinent), f1);
     }
